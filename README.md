@@ -46,7 +46,7 @@ DeviceFileEvents
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64-portable-14.0.1.exe". Based on the logs returned, at `2024-11-08T22:16:47.4484567Z`, an employee on the "threat-hunt-lab" device ran the file `tor-browser-windows-x86_64-portable-14.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
+Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64-portable-14.0.1.exe". Based on the logs returned, at `2026-06-05T01:35:37.6102838Z`, an employee on the "threat-hunt-lab" device ran the file `tor-browser-windows-x86_64-portable-14.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
 
 **Query used to locate event:**
 
@@ -86,7 +86,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2024-11-08T22:18:01.1246358Z`, an employee on the "threat-hunt-lab" device successfully established a connection to the remote IP address `15.204.175.29` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\n4t3\desktop\tor browser\browser\torbrowser\tor\tor.exe`. This activity indicates that the Tor client successfully connected to the Tor network and began routing traffic through the anonymity service
+Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2026-06-05T01:37:52.8196718Z`, an n4t3 on the "nate-th-vm" device successfully established a connection to the remote IP address `15.204.175.29` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\n4t3\desktop\tor browser\browser\torbrowser\tor\tor.exe`. This activity indicates that the Tor client successfully connected to the Tor network and began routing traffic through the anonymity service
 
 **Query used to locate events:**
 
