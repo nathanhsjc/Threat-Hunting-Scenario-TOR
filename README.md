@@ -191,6 +191,20 @@ C:\Users\n4t3\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe
 C:\Users\n4t3\Desktop\tor-shopping-list.txt
 
 ---
+## MITRE ATT&CK Techniques Observed
+
+| Technique ID | Technique Name | Observed Activity |
+|---|---|---|
+| T1090.003 | Proxy: Multi-hop Proxy | tor.exe established connections to Tor relay nodes on port 9001, routing traffic through the Tor anonymity network |
+| T1564.001 | Hide Artifacts: Hidden Files and Directories | Tor Browser installed silently using the /S flag, suppressing visible installation dialogs |
+| T1071.001 | Application Layer Protocol: Web Protocols | firefox.exe routed browser traffic through local Tor SOCKS proxy on port 9150 |
+| T1105 | Ingress Tool Transfer | Tor Browser installer downloaded to endpoint prior to silent installation |
+
+
+
+
+
+-------
 
 ## Summary
 
