@@ -86,7 +86,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2026-06-05T01:37:52.8196718Z`, an n4t3 on the "nate-th-vm" device successfully established a connection to the remote IP address `15.204.175.29` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\n4t3\desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`. This activity indicates that the Tor client successfully connected to the Tor network and began routing traffic through the anonymity service
+Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2026-06-05T01:37:52.8196718Z`, an n4t3 on the "nate-th-vm" device successfully established a connection to the remote IP address `15.204.175.29` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `C:\Users\n4t3\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`. This activity indicates that the Tor client successfully connected to the Tor network and began routing traffic through the anonymity service
 
 **Query used to locate events:**
 
