@@ -54,7 +54,7 @@ Searched for any `ProcessCommandLine` that contained the string "tor-browser-win
 
 DeviceProcessEvents  
 | where DeviceName == "nate-th-vm"  
-| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe"  
+| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.15.exe"  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
 <img width="982" height="243" alt="image" src="https://github.com/user-attachments/assets/bc2be5fe-2259-4481-81fe-fda5ccdc3e23" />
@@ -86,7 +86,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2026-06-05T01:37:52.8196718Z`, an n4t3 on the "nate-th-vm" device successfully established a connection to the remote IP address `15.204.175.29` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\n4t3\desktop\tor browser\browser\torbrowser\tor\tor.exe`. This activity indicates that the Tor client successfully connected to the Tor network and began routing traffic through the anonymity service
+Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2026-06-05T01:37:52.8196718Z`, an n4t3 on the "nate-th-vm" device successfully established a connection to the remote IP address `15.204.175.29` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\n4t3\desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`. This activity indicates that the Tor client successfully connected to the Tor network and began routing traffic through the anonymity service
 
 **Query used to locate events:**
 
